@@ -1,0 +1,116 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: User
+ * Date: 03-Apr-19
+ * Time: 11:16 AM
+ */
+
+namespace Tudublin;
+
+class User
+{
+    private $id;
+    private $name;
+    private $CustId;
+    private $AdminId;
+
+
+
+    public function __toString()
+    {
+        // TODO: Implement __toString() method.
+        return 'id = ' . $this ->id
+            . '<br> name = ' . $this->name
+            . '<br> custId = ' . $this->CustId
+            . '<br> adminId = ' . $this->AdminId;
+
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param mixed $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param mixed $name
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCustId()
+    {
+        return $this->CustId;
+    }
+
+    /**
+     * @param mixed $CustId
+     */
+    public function setCustId($CustId)
+    {
+        $this->CustId = $CustId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getAdminId()
+    {
+        return $this->AdminId;
+    }
+
+    /**
+     * @param mixed $AdminId
+     */
+    public function setAdminId($AdminId)
+    {
+        $this->AdminId = $AdminId;
+    }
+
+}
+
+
+
+
+*******************************
+<?php
+    $dbhost = "localhost";
+    $dbuser = "root";
+    $dbpass = "pass";
+    $db = "mydb";
+    $conn = new mysqli($dbhost, $dbuser, $dbpass,$db) or die("Connect failed: %s\n". $conn -> error);
+
+function CloseCon($conn)
+{
+    $conn -> close();
+}
+...................
+<?php
+define('DB_HOST', 'localhost:3306');
+define('DB_USER', 'root');
+define('DB_PASS', 'pass');
+define('DB_NAME', 'mydb');
