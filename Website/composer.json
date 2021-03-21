@@ -1,0 +1,12 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Tudublin\\": "src/"
+        }
+    },
+    "require": {
+        "codeception/codeception": "^2.5",
+        "mattsmithdev/pdo-crud-for-free-repositories": "^0.9.1",
+        "ext-mysqli": "*"
+    }
+}

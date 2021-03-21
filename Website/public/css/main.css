@@ -1,0 +1,55 @@
+body {
+    background-color: lightpink;
+    background-size: cover;
+    font-family: Arial;
+}
+.header {
+    padding: 10px;
+    font-size: 40px;
+    text-align: center;
+}
+
+section {
+    left: 12px;
+    font-size: 40px;
+    font-family: 'Courier';
+    color: black;
+    padding: 36px;
+    margin: 10px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+li
+{
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center ;
+}
+
+h3 {
+    text-align: center ;
+    font-family: "monospace";
+    font-size:  15px;
+}
+
+p {
+    text-align: center;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+head {
+    padding: 0;
+    margin: 0;
+}
